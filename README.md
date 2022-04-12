@@ -185,4 +185,4 @@ All original credits go to Paul and AnimeKaizoku, Without their efforts, this fo
 
 Any other authorship/credits can be seen through the commits.
 
-Should any be missing kindly let us know at [AstrakoBotSupport](https://t.me/AstrakoBotSupport) or simply submit a pull request on the readme.
+Should any  be missing kindly let us know at [AstrakoBotSupport](https://t.me/AstrakoBotSupport) or simply submit a pull request on the readme.

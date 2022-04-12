@@ -2,16 +2,16 @@ import random
 import html
 from datetime import datetime
 import humanize
-from AstrakoBot.modules.sql.clear_cmd_sql import get_clearcmd
+from SerafallRobot.modules.sql.clear_cmd_sql import get_clearcmd
 
-from AstrakoBot import dispatcher
-from AstrakoBot.modules.disable import (
+from SerafallRobot import dispatcher
+from SerafallRobot.modules.disable import (
     DisableAbleCommandHandler,
     DisableAbleMessageHandler,
 )
-from AstrakoBot.modules.sql import afk_sql as sql
-from AstrakoBot.modules.users import get_user_id
-from AstrakoBot.modules.helper_funcs.misc import delete
+from SerafallRobot.modules.sql import afk_sql as sql
+from SerafallRobot.modules.users import get_user_id
+from SerafallRobot.modules.helper_funcs.misc import delete
 from telegram import MessageEntity, Update, ParseMode
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, Filters, MessageHandler, run_async

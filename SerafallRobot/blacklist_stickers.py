@@ -1,17 +1,17 @@
 import html
 from typing import Optional
 
-import AstrakoBot.modules.sql.blsticker_sql as sql
-from AstrakoBot import LOGGER, dispatcher
-from AstrakoBot.modules.connection import connected
-from AstrakoBot.modules.disable import DisableAbleCommandHandler
-from AstrakoBot.modules.helper_funcs.alternate import send_message
-from AstrakoBot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from AstrakoBot.modules.helper_funcs.misc import split_message
-from AstrakoBot.modules.helper_funcs.string_handling import extract_time
+import SerafallRobot.modules.sql.blsticker_sql as sql
+from SerafallRobot import LOGGER, dispatcher
+from SerafallRobot.modules.connection import connected
+from SerafallRobot.modules.disable import DisableAbleCommandHandler
+from SerafallRobot.modules.helper_funcs.alternate import send_message
+from SerafallRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from SerafallRobot.modules.helper_funcs.misc import split_message
+from SerafallRobot.modules.helper_funcs.string_handling import extract_time
 
-from AstrakoBot.modules.log_channel import loggable
-from AstrakoBot.modules.warns import warn
+from SerafallRobot.modules.log_channel import loggable
+from SerafallRobot.modules.warns import warn
 from telegram import Chat, Message, ParseMode, Update, User, ChatPermissions
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, MessageHandler

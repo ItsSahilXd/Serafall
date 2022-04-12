@@ -1,11 +1,11 @@
 import html
-from AstrakoBot.modules.disable import DisableAbleCommandHandler
-from AstrakoBot import dispatcher, SUDO_USERS
-from AstrakoBot.modules.helper_funcs.extraction import extract_user
+from SerafallRobot.modules.disable import DisableAbleCommandHandler
+from SerafallRobot import dispatcher, SUDO_USERS
+from SerafallRobot.modules.helper_funcs.extraction import extract_user
 from telegram.ext import CallbackContext, run_async, CallbackQueryHandler
-import AstrakoBot.modules.sql.approve_sql as sql
-from AstrakoBot.modules.helper_funcs.chat_status import user_admin
-from AstrakoBot.modules.log_channel import loggable
+import SerafallRobot.modules.sql.approve_sql as sql
+from SerafallRobot.modules.helper_funcs.chat_status import user_admin
+from SerafallRobot.modules.log_channel import loggable
 from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton, Update
 from telegram.utils.helpers import mention_html
 from telegram.error import BadRequest

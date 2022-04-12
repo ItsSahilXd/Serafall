@@ -1,4 +1,4 @@
-# Magisk Module- Module from AstrakoBot
+# Magisk Module- Module from SerafallRobot
 # Inspired from RaphaelGang's android.py
 # By DAvinash97
 
@@ -12,10 +12,10 @@ from telegram.ext import CallbackContext, run_async
 from ujson import loads
 from yaml import load, Loader
 
-from AstrakoBot import dispatcher
-from AstrakoBot.modules.sql.clear_cmd_sql import get_clearcmd
-from AstrakoBot.modules.github import getphh
-from AstrakoBot.modules.helper_funcs.misc import delete
+from SerafallRobot import dispatcher
+from SerafallRobot.modules.sql.clear_cmd_sql import get_clearcmd
+from SerafallRobot.modules.github import getphh
+from SerafallRobot.modules.helper_funcs.misc import delete
 
 
 def magisk(update: Update, context: CallbackContext):

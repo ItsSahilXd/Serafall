@@ -5,10 +5,10 @@ from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton, Upda
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import CommandHandler, CallbackQueryHandler, CallbackContext, run_async
 
-import AstrakoBot.modules.sql.connection_sql as sql
-from AstrakoBot import dispatcher, SUDO_USERS, DEV_USERS
-from AstrakoBot.modules.helper_funcs import chat_status
-from AstrakoBot.modules.helper_funcs.alternate import send_message, typing_action
+import SerafallRobot.modules.sql.connection_sql as sql
+from SerafallRobot import dispatcher, SUDO_USERS, DEV_USERS
+from SerafallRobot.modules.helper_funcs import chat_status
+from SerafallRobot.modules.helper_funcs.alternate import send_message, typing_action
 
 user_admin = chat_status.user_admin
 

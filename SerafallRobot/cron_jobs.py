@@ -8,8 +8,8 @@ from telegram.ext.commandhandler import CommandHandler
 from telegram.update import Update
 from telegram.ext.callbackcontext import CallbackContext
 
-from AstrakoBot import DB_NAME, OWNER_ID, dispatcher, LOGGER as log, BACKUP_PASS
-from AstrakoBot.modules.helper_funcs.chat_status import owner_plus
+from SerafallRobot import DB_NAME, OWNER_ID, dispatcher, LOGGER as log, BACKUP_PASS
+from SerafallRobot.modules.helper_funcs.chat_status import owner_plus
 
 @owner_plus
 def backup_now(_: Update, ctx: CallbackContext):
@@ -52,9 +52,9 @@ def backup_db(_: CallbackContext):
         if os.path.exists('log.txt'):
             print("logs copied")
             shutil.copyfile('log.txt', '{}/log.txt'.format(bkplocation))
-        if os.path.exists('AstrakoBot/config.py'):
+        if os.path.exists('SerafallRobot/config.py'):
             print("config copied")
-            shutil.copyfile('AstrakoBot/config.py', '{}/config.py'.format(bkplocation))
+            shutil.copyfile('SerafallRobot/config.py', '{}/config.py'.format(bkplocation))
         log.info("zipping the backup")
         zipcmd = "zip --password '{}' {} {}/*".format(zip_pass, bkplocation, bkplocation)
         zipinfo = "zipping db backup"
@@ -95,7 +95,7 @@ def term(cmd, info):
         log.error(f"error while running {info}")
         log.info(f"{stderr}")
 
-from AstrakoBot import updater as u
+from SerafallRobot import updater as u
 # run the backup daliy at 1:00
 twhen = datetime.datetime.strptime('01:00', '%H:%M').time()
 j = u.job_queue

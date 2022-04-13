@@ -2,9 +2,6 @@
 # SerafallRobot 
 <p align="center">
 
-<img src="https://telegra.ph/file/00abaa996277e1d439d0c.jpg" /> </a>
-
-
 A modular Telegram Python bot running on python3 with a sqlalchemy database.
 
 Originally a SaitamaRobot fork, SerafallRobot evolved further and was built to be more robust. 
